@@ -1,13 +1,22 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+  If you are in the terminal and you cd to a directory that is not being tracked by Git, then you call 'git init', you will create an empty repository. All the files in that directory will be untracked. At this point you can call 'git add .' and 'git commit' to start tracking all the files in the directory and its subdirectories.
+
 How is the staging area different from the working directory and the repository?
+
 What value do you think it offers?
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+  When you 'git add' files from the working directory, they are placed in the staging area. When you 'git commit', only files in the staging area are committed to the repository, not the ones in the working directory.
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+  This is valuable so that you can add 1 or several files to your staging area, reset a file you accidentally added with 'git reset <filename.???>'
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+  git add those files you would like to prepare for commit, placing them in the staging area. Use 'git diff' (with no arguments) to compare the differences between working directory and staging area. Use 'git diff --staged' to find the differences between staging area and the latest commit in the repository. Use 'git reset --hard' cautiously to discard any changes in either the working directory or the staging area.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+  If I were going to go off on a tangent, and create a feature I wasn't sure would be in the final product, I would create a branch. It would help to keep my master branch clean. All my experiments would be kept off to the side. And then, it those experiments turned out to be brilliant, then I could incorporate them back into the master branch using merge.
 
 How do the diagrams help you visualize the branch structure?
 
