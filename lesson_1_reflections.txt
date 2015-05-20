@@ -1,6 +1,6 @@
 How did viewing a diff between two versions of a file help you see the bug that was introduced?
 
-    Well, after running the following command:
+    After running the following command:
 
     $ diff -u game_old.js game_new.js
 
