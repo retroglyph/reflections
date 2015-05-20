@@ -1,0 +1,46 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+    Well, after running the following command:
+
+    $ diff -u game_old.js game_new.js
+
+    I could see line buy line which lines were added, and which items were removed. So even though were over a thousand lines of code in each of the two files, old and new, there were only a handful that were different. So I could focus my attention on those few lines, and limit the candidates for where the error occurred.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+    I sometimes comment out a line of code that I think I might need later. If I were more fluent with Git, I would feel more comfortable deleting lines of code, even if I thought I might need them back later. I might be more experimental in my coding, taking more risks, knowing that I can easily get back what I had lost. For example, say some code was working, but the code wasn't elegant or efficient. I would make a comment like: // this code is working, and then make changes in attempt to make the code more efficient and more elegant, knowing that I could go back to a stabler version.
+
+    Also, interesting to know that Google Docs and Dropbox have version control built write in. I use google Drive a lot, and oftentimes forget about that feature.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    I kind of like the auto save feature in Google Docs. Although I can see now that by relying on that feature, I have developed some bad habits.
+
+    Since the best way to use Git is with the command line, and since I've managed to all but totally avoid the command line for the past 30 years, I can see that it will be a challenge for me to get in the habit of making commits to my github projects.
+
+    So the pros: If you manually commit at exactly the right times, you will have a perfect record of how you project developed. In the future, when you or another programmer needs to understand the project, this perfectly documented progression of the development will help you or another programmer to remember what happened and why.
+
+    The cons, on the other hand, are that you might not always remember to commit at the right time. Sometimes littering the commit history with too many details and other times, forgetting to commit, and losing the details of the progression.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+    Simple. Since Google Drive auto saves frequently, chances are by the time you switch from one file to a second, the first will already be saved. So Drive must save each separately.
+
+    Since one commits manually with Git, it makes sense to allow multiple files to be committed at once. For example implementing a new feature like a menu may require changes to .js, .html and .css files. Once the menu is implemented, committing those 3 files at once allows for the best way of backing them up.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    'git log' will show you the id and comment of each commit. When you find a commit about which you want to learn more, use the id number of that commit and the id number of the commit previous (i.e. the one below on the git log printout), or just the first 4 characters of the ids like so:
+
+    git diff first_commit_id second_commit_id
+
+    This will show you which lines were added, and which lines were deleted, along with a few lines unchanged to help orient you.
+
+How might using version control make you more confident to make changes that could break something?
+
+    Whereas I can see command of Git would make me more confident that I could use git log, git diff, and diff checkout to help me find bugs, I don't yet have that command. I can image becoming more and more proficient with Git will make me more confident. The proof is in the pudding, let's see how religious I become at committing my changes at just the right time. This will be a new way of developing software for me. Lots of bad habits to break.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I have to revise a project which I have committed to Git. I want to make changes to that repository, committing a appropriate times. Also, the reason I came back to this class, watched every video and performed every exercise is that I was starting Project 2 and was instructed to Fork an existing repository. I wanted to start Project 2 under strict source control.
