@@ -16,12 +16,17 @@ How can you use the staging area to make sure you have one commit per logical ch
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
-  If I were going to go off on a tangent, and create a feature I wasn't sure would be in the final product, I would create a branch. It would help to keep my master branch clean. All my experiments would be kept off to the side. And then, it those experiments turned out to be brilliant, then I could incorporate them back into the master branch using merge.
+  If I were going to go off on a tangent, and create a feature I wasn't sure would be in the final product, I would create a branch. It would help to keep my master branch clean. All my experiments would be kept off to the side. And then, if those experiments turned out to be brilliant, then I could incorporate them back into the master branch using merge.
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+  When you run the commands git log or git log --graph --oneline branch1 branch2 etc, you can see the commit IDs and the comments but what you can't see as clearly is the branching structure of the "tree". Drawing a diagram help make the branching structure more obvious.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+  The idea of branching is the ability to work on different version of a project simultaneous, either with multiple authors or a single author working on multiple items such as new features, bug fixes and the like. At some point, you'll want to merge two branches, incorporating all the features in both branches. So for instance, the Coins branch lacked color, whereas the merge branch included both coins and color.
+
+  We represent each branch in a graph as a set of nodes connected by lines. So two branches diverge from a common point. We represent the merge as the coming back together of the two divergent branches because all the commits of each branch are included in the merged commit. We can then delete the one branch which was merged into the other, because all those commits are now reachable from the merged commit.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
