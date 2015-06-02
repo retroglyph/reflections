@@ -28,5 +28,6 @@ What is the result of merging two branches together? Why do we represent it in t
 
   We represent each branch in a graph as a set of nodes connected by lines. So two branches diverge from a common point. We represent the merge as the coming back together of the two divergent branches because all the commits of each branch are included in the merged commit. We can then delete the one branch which was merged into the other, because all those commits are now reachable from the merged commit.
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
-manually?
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+  Git's automatic merging is faster, but it may not always be perfect and you may not understand all the code that a team member has written. Alway merging manually will be much more time consuming, but also much more educational.
