@@ -19,6 +19,12 @@ use one instead of another?
 
     A branch resides inside a repository, and represents an independent line of development oftentimes used for bug fixes or new features.
 
+    I would a Fork if I want to leverage an open source project either to contribute, or to use as a starting point for my own project.
+
+    I would clone a project local to local if I wanted to use a starter repository that I created as a starting point for a game. I might also clone a repository I forked up on GitHub.
+
+    I might create branches when starting a new feature, fixing a bug, or when collaborating on project.
+
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
