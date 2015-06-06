@@ -25,10 +25,9 @@ use one instead of another?
 
     I might create branches when starting a new feature, fixing a bug, or when collaborating on project.
 
-What is the benefit of having a copy of the last known state of the remote
-stored locally?
+What is the benefit of having a copy of the last known state of the remote stored locally?
 
-    Fill in your answer here
+    This allows you to compare the differences between the last stored state of the remote with the changes you might have made locally before doing a merge. It also allows you see what changes your collaborators, for instance, made singce your last pull.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
