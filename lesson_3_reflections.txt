@@ -39,4 +39,4 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    I would use separate branches for experimental features, new features and bug fixes. Maybe if I were working on a small project on my own I might work on the main branch. But if I were collaborating and using pull-requests, separate branches make more sense.
