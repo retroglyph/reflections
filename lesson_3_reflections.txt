@@ -32,7 +32,9 @@ What is the benefit of having a copy of the last known state of the remote store
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Without GitHub's pull-request feature, I would be forced to use email and word of mouth (if I shared an office with a collaborator).
+
+    Sometimes word of mouth is a better form of communications because discussions can take place. Using email can leave a "paper trail", but GitHub's (and BitBucket's) pull-request feature and the ability to make comments and receive email notifications directly addresses one particular need quite specifically, and thereby could be quite the time saver.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
